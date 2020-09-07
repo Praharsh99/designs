@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taskly</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <div class="sidebar__header">
+          <img src="./logo.svg" alt="taskly" />
+          <img
+            class="sidebar__headerAddLogo"
+            src="white_add.svg"
+            alt="taskly"
+          />
+          <h3>taskly</h3>
+        </div>
+
+        <div class="sidebar__weeklyPinned">
+          <div class="sidebar__weeklyPinnedHeader">
+            <h2>Weekly Pinned</h2>
+            <p>View all</p>
+          </div>
+
+          <div class="weeklyPinned__block">
+            <div class="weeklyPinned__block__img">
+              <img
+                src="https://img.icons8.com/color/48/000000/doctor-male--v1.png"
+              />
+            </div>
+
+            <div class="weeklyPinned__block__info">
+              <h2>Call doctor for tests</h2>
+              <h4>15 Mar 2020 - 9:00 AM</h4>
+              <button>Proceed</button>
+              <p>Ask for blood tests and GYM certificates</p>
+            </div>
+          </div>
+
+          <div class="weeklyPinned__block weeklyPinned__block-no-shadow">
+            <div class="weeklyPinned__block__img">
+              <img
+                src="https://img.icons8.com/color/48/000000/birthday-cake.png"
+              />
+            </div>
+
+            <div
+              class="weeklyPinned__block__info weeklyPinned__block__info-row-flex"
+            >
+              <h2>Beatrice's bday</h2>
+              <h4>22 Mar 2020</h4>
+            </div>
+          </div>
+
+          <div class="weeklyPinned__block weeklyPinned__block-no-shadow">
+            <div class="weeklyPinned__block__img">
+              <img src="./white_add.svg" style="padding: 6px" />
+            </div>
+
+            <div
+              class="weeklyPinned__block__info weeklyPinned__block__info-row-flex"
+            >
+              <h2>Add new weekly pin</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar__calender">
+          <div class="calender__header">
+            <h2>March, 2020</h2>
+            <p>Two weeks</p>
+          </div>
+
+          <div class="calender__chart">
+            <div class="chart__weeks">
+              <span>Mon</span>
+              <span>Tue</span>
+              <span>Wed</span>
+              <span>Thu</span>
+              <span>Fri</span>
+              <span>Sat</span>
+              <span>Sun</span>
+            </div>
+
+            <div class="chart__dates">
+              <div class="chart__datesRow">
+                <span>1</span>
+                <span style="color: #000; font-weight: bold">2</span>
+                <span style="color: #000; font-weight: bold">3</span>
+                <span style="color: #000; font-weight: bold">4</span>
+                <span>5</span>
+                <span>6</span>
+                <span>7</span>
+              </div>
+              <div class="chart__datesRow">
+                <span style="color: #000; font-weight: bold">8</span>
+                <span style="color: #000; font-weight: bold">9</span>
+                <span>10</span>
+                <span
+                  style="color: #000; font-weight: bold; background: #ecd15b"
+                  >11</span
+                >
+                <span style="color: #000; font-weight: bold">12</span>
+                <span>13</span>
+                <span>14</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Main content -->
+        <div class="container__leftSide">
+          <div class="leftSide__title">
+            <div class="title__block">
+              <h1>Today's schedule</h1>
+              <h1>Thursday 11</h1>
+            </div>
+
+            <div class="title__addBlock">
+              <img src="./logo.svg" alt="" />
+              <img src="./white_add.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="todo__cards">
+            <div class="todo__card">
+              <img
+                src="https://img.icons8.com/color/96/000000/checked--v1.png"
+              />
+              <div class="todo todo-done">
+                <div class="todo__infoTitle">
+                  <div class="todo__doodle">
+                    <img
+                      src="https://img.icons8.com/office/96/000000/alarm-clock.png"
+                    />
+                  </div>
+                  <div class="todo__content">
+                    <h2>Wake up Buddy</h2>
+                    <h4>7:00 AM</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="todo__card">
+              <img
+                src="https://img.icons8.com/color/96/000000/checked--v1.png"
+              />
+              <div class="todo todo-done">
+                <div class="todo__infoTitle">
+                  <div class="todo__doodle">
+                    <img
+                      src="https://img.icons8.com/color/96/000000/guru.png"
+                    />
+                  </div>
+
+                  <div class="todo__content">
+                    <h2>Morning Yoga</h2>
+                    <h4>8:00 AM</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="todo__card">
+              <img src="./tick-grey.svg" />
+              <div class="todo">
+                <div class="todo__infoTitle">
+                  <div class="todo__doodle">
+                    <img
+                      src="https://img.icons8.com/color/96/000000/deadlift.png"
+                    />
+                  </div>
+
+                  <div class="todo__content">
+                    <h2>Daily workout</h2>
+                    <h4>9:00 AM</h4>
+                  </div>
+                </div>
+
+                <div class="todo_contentInfo">
+                  <p>- Squats 10x3</p>
+                  <p>- Push up 10x3</p>
+                  <p>- Pull up 10x3</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="todo__card">
+              <img src="./tick-grey.svg" />
+              <div class="todo">
+                <div class="todo__infoTitle">
+                  <div class="todo__doodle">
+                    <img
+                      src="https://img.icons8.com/color/48/000000/working-with-a-laptop.png"
+                    />
+                  </div>
+
+                  <div class="todo__content">
+                    <h2>Shift project kick off pt.1</h2>
+                    <h4>10:00 AM</h4>
+                  </div>
+                </div>
+
+                <div class="todo_contentInfo">
+                  <p>Zoom call, kick off with Elena</p>
+                  <p>and Jordan from shift</p>
+                  <p class="todo__contentInfoAvatar">
+                    <img
+                      src="https://lh3.googleusercontent.com/a-/AOh14GiLwx7VUSkc9cokn2XTog0Y9FxB2sRG8Zg30y3PbQ=s88-c-k-c0x00ffffff-no-rj-mo"
+                      alt=""
+                    />
+                    <img
+                      src="https://lh3.googleusercontent.com/ogw/ADGmqu9W1rP_TN9_2YInP7nQZmQhZKwyf3J5nJtShBO1=s32-c-mo"
+                      alt=""
+                    />
+                    <img
+                      src="https://avatars3.githubusercontent.com/u/38614938?s=60&v=4"
+                      alt=""
+                    />
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="todo__card">
+              <img
+                src="./tick-grey.svg"
+              />
+              <div class="todo">
+                <div class="todo__infoTitle">
+                  <div class="todo__doodle">
+                    <img src="https://img.icons8.com/color/48/000000/cricket.png"/>
+                  </div>
+                  <div class="todo__content">
+                    <h2>Play cricket</h2>
+                    <h4>8:00 PM</h4>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container__rightSide">
+        <div class="right__header">
+          <div class="header__userDetails">
+            <h2>Praharsh Paravastu</h2>
+            <p>My willings</p>
+          </div>
+
+          <div class="header__userAvatar">
+            <img src="https://lh3.googleusercontent.com/a-/AOh14GiLwx7VUSkc9cokn2XTog0Y9FxB2sRG8Zg30y3PbQ=s88-c-k-c0x00ffffff-no-rj-mo" alt="">
+          </div>
+        </div>
+
+        <div class="right__musicPlayer">
+          <div class="musicPlayer__details">
+            <img src="./cover-image.jpg" alt="">
+
+            <div class="details__content">
+              <h2>Godzilla Theme</h2>
+              <h3>Eminem</h3>
+            </div>
+          </div>
+
+          <div class="musicPlayer__progressBar">
+            <div class="progressBar__juice"></div>
+          </div>
+
+          <div class="musicPlayer__controls">
+            <img src="https://img.icons8.com/android/48/000000/shuffle.png"/>
+            <img src="https://img.icons8.com/ios-glyphs/48/000000/skip-to-start.png"/>
+            <div class="controls__play"><img src="https://img.icons8.com/android/48/000000/play.png"/></div>
+            <img src="https://img.icons8.com/ios-glyphs/48/000000/end.png"/>
+            <img src="https://img.icons8.com/ios-glyphs/48/000000/repeat.png"/>
+          </div>
+        </div>
+
+        <div class="right__timer">
+          <h1>8:48 AM</h1>
+          <h2> <img src="https://img.icons8.com/color/48/000000/sun-star.png"/> Now it's almost sunny </h2>
+        </div>
+
+        <div class="right__advertisement">
+          <h1>Unleash the freelance super power</h1>
+
+          <div class="advertisement__image">
+            <img src="https://img.icons8.com/color/240/000000/hulk.png"/>
+
+            <div class="advertisement__button">
+              <img src="https://img.icons8.com/ios-filled/26/000000/long-arrow-right.png"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
