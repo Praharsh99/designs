@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700;800&family=Raleway:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #f3e6e0, #e9d6d0);
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  height: 96vh;
+  width: 95vw;
+  border: 8px solid #000;
+  border-radius: 50px;
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 30px 2px rgba(0, 0, 0, 0.28);
+}
+
+.right {
+  width: 60%;
+  height: 100%;
+  border-radius: 35px;
+  background: url("./image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
+  box-shadow: 1px 0 50px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 60px;
+}
+
+.left {
+  width: 40%;
+  height: 100%;
+  padding-left: 50px;
+}
+
+.right > h2 {
+  font-family: Quicksand, sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #fff;
+}
+
+.right__info > h1 {
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  font-size: 42px;
+  letter-spacing: 2px;
+}
+
+.right__info > div {
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  margin: 20px 0;
+}
+
+.right__info > div > p:first-child {
+  margin-bottom: 10px;
+}
+
+.right__info > button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #f75d37;
+  color: #fff;
+  font-family: Quicksand, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 20px 60px;
+  border-radius: 12px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.25);
+  margin-top: 10px;
+}
+
+.right__slide {
+  display: flex;
+  align-items: center;
+  font-family: Raleway, sans-serif;
+}
+
+.slide__bar {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.slide__bar > h2 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-family: Quicksand, sans-serif;
+}
+
+.slide__bar > div {
+  border-radius: 24px;
+  height: 2.4px;
+  width: 180px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 0 25px;
+}
+
+.slide__bar > div > div {
+  background: rgba(255, 255, 255, 0.75);
+  width: 30%;
+  height: 100%;
+  border-radius: 24px;
+}
+
+.slide__img {
+  margin-left: 50px;
+}
+
+.slide__img > img {
+  margin: 0 8px;
+  width: 20px;
+  height: 20px;
+}
+
+.left__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 25px;
+  padding-right: 45px;
+}
+
+.left__header > img {
+  width: 35px;
+}
+
+.header__links {
+  display: flex;
+  align-items: center;
+}
+
+.header__links > span {
+  font-family: Raleway, sans-serif;
+  color: rgb(0, 0, 0);
+  margin: 0 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.header__links > img {
+  border-radius: 10px;
+  object-fit: contain;
+  width: 40px;
+  height: 40px;
+  margin-left: 15px;
+}
+
+.search {
+  width: 92%;
+  display: flex;
+  align-items: center;
+  border-bottom: 2.2px solid rgb(238, 238, 238);
+  margin-top: 40px;
+  padding-bottom: 12px;
+}
+
+.search > img {
+  width: 20px;
+  margin-right: 15px;
+}
+
+.search > input {
+  outline: none;
+  border: none;
+  background: transparent;
+  flex: 1;
+  padding-top: 5px;
+  pointer-events: none;
+}
+
+.search > input::placeholder {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: Raleway, sans-serif;
+  color: rgb(221, 221, 221);
+}
+
+.discover > h1 {
+  color: #000;
+  font-family: Quicksand, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.discover__links {
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  color: #cacaca;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: Quicksand, sans-serif;
+}
+
+.discover__links > span:first-child {
+  color: #e04a18;
+  position: relative;
+}
+
+.discover__links > span:first-child:after {
+  content: "•";
+  position: absolute;
+  color: #e04a18;
+  bottom: -90%;
+  left: 45%;
+  font-size: 20px;
+}
+
+.discover__images {
+  width: 100%;
+  display: flex;
+  margin-top: 25px;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.discover__images > div {
+  width: 210px;
+  height: 280px;
+  border-radius: 15px;
+  margin-right: 25px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  color: #fff;
+  font-family: Quicksand, sans-serif;
+  padding-left: 20px;
+  padding-right: 5px;
+  padding-bottom: 25px;
+}
+
+.discover__images > div > h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.discover__images > div > span {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.discover__images > div > span > img {
+  width: 14px;
+  margin-right: 8px;
+}
+
+.discover__images > div:nth-child(1) {
+  background: url("https://pix.avax.news/avaxnews/c4/06/000506c4_medium.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 45% 80%;
+}
+
+.discover__images > div:nth-child(2) {
+  background: url("https://i.redd.it/pcgaligi3zvz.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 45% 80%;
+}
+
+.adventure {
+  margin-top: 25px;
+}
+
+.adventure > div:first-child {
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Quicksand, sans-serif;
+}
+
+.adventure > div:first-child > h1 {
+  font-size: 20px;
+}
+
+.adventure > div:first-child > h4 {
+  color: #cacaca;
+  font-size: 14px;
+}
+
+.adventure__icons {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 28px;
+  padding-left: 10px;
+  margin-left: 20px;
+}
+
+.adventure__icons > img {
+  width: 28px;
+}
+
+.adventure__icons > img:nth-child(2) {
+  width: 34px;
+}
+
+.adventure__icons > img:nth-child(3) {
+  width: 36px;
+}
+
+.adventure__icons > img:nth-child(4) {
+  width: 38px;
+}
+
+.adventure__icons > img:nth-child(5) {
+  width: 38px;
+}
